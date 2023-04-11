@@ -14,8 +14,8 @@ $.ajaxPrefilter(function(potions){
 
     //给访问权限统一挂在complete 回调函数
     potions.complete= function(res){
-        console.log('complete 被执行了')
-            console.log(res);
+        // console.log('complete 被执行了')
+            // console.log(res);
             if(res.responseJSON.status ===1 && res.responseJSON.message==='身份认证失败！'){
                 //强制清空 token
                 //返回登录页面
